@@ -15,23 +15,16 @@
 
 <body>
 
-  <div class="row mx-auto">
-    <!-- left side on large screen -->
-    <div class="col-md-7 left">
-      <div class="row weather mx-auto mt-5">
-        <div class="col-3 mx-auto">
-          <h1><span id="temperature">23</span>°c</h1>
-        </div>
-        <div class="col mx-auto">
-          <div class="col mx-auto" id="location">
-            <h3 class="location">Lagos</h3>
-          </div>
-          <div class="col mx-auto" id="time">
-            <p><sub>
-                <script>
-                  document.write(new Date().toDateString())
-                </script>
-              </sub></p>
+ <div class="row mx-auto">
+   <!-- left side on large screen -->
+   <div class="col-md-7 left">
+    <div class="row weather mx-auto mt-5">
+      <div class="col-3 mx-auto">
+        <h1><span id="temperature">23</span>°c</h1>
+      </div>
+      <div class="col mx-auto" >
+        <div class="col mx-auto" id="location">
+           <h3 class="location">Lagos</h3>
           </div>
         </div>
         <div class="col-4 img mx-auto">
@@ -44,19 +37,19 @@
         </div>
       </div>
 
-    </div>
-    <!-- right side on large screen -->
-    <div class="col-md-5 right mx-auto pt-5">
-      <div id="location-right">
-        <h4> Location: <span class="location">Lagos, Nigeria</span></h4>
-      </div>
+   </div>
+   <!-- right side on large screen -->
+   <div class="col-md-5 right mx-auto pt-5">
+     <div id="location-right">
+      <h4> Location: <span class="location">Lagos, Nigeria</span></h4>
+     </div>
 
 
       <ul class="my-list mx-auto" id="w-details">
         <li class="w-list">Humidity: <span id="humidity"> 79%</span></li>
         <li class="w-list">Feels like: <span id="feels-like"> 25°c</span></li>
         <li class="w-list">Wind: <span id="wind">8.1</span></li>
-        <li class="w-list">lon: <span id="lon">7.79</span> & lat: <span id="lat">3.5</span></li>
+        <li class="w-list">lon: <span id ="lon">7.79</span> & lat: <span id="lat">3.5</span></li>
       </ul>
 
       <!-- Button trigger modal -->
@@ -65,51 +58,32 @@
           Change Location
         </button>
       </div>
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Input Location</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form id="w-form">
-                <div class="form-group">
-                  <label for="city">City</label>
-                  <input type="text" id="city" class="form-control">
-                </div>
-                <!-- <div class="form-group">
+      <div class="modal-body">
+       <form id="w-form">
+         <div class="form-group">
+           <label for="city">City</label>
+           <input type="text" id="city" class="form-control">
+         </div>
+         <!-- <div class="form-group">
           <label for="country">Country</label>
           <input type="text" id="country" class="form-control">
         </div> -->
-
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="submit" class="btn btn-primary">Save changes</button>
-                </div>
-              </form>
-            </div>
-
-          </div>
-        </div>
+       
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Save changes</button>
       </div>
+    </form>
+  </div>
+
     </div>
   </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-    crossorigin="anonymous"></script>
-  <script src="app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+ <script src="app.js"></script>
 </body>
 
 </html>
